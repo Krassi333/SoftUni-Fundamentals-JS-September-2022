@@ -5,12 +5,13 @@ function pascalCaseSplitter(string) {
         if (string[i].charCodeAt() >= 65 && string[i].charCodeAt() <= 90) {
             if (i == 0) {
                 word = string[i];
-                if( i== string.length-1){
-                    res.push(word);
-                }
+               
             } else {
                 res.push(word);
                 word = string[i];
+            }
+            if( i== string.length-1){
+                res.push(word);
             }
 
         } else {
@@ -28,4 +29,4 @@ function pascalCaseSplitter(string) {
 
 }
 
-pascalCaseSplitter('A')
+pascalCaseSplitter('ANewYearA')
